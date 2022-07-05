@@ -29,3 +29,16 @@ para criarmos __init__. O Python constrói o objeto, cria um lugar na memória e
         self.saldo = saldo
         self.limite = limite
 ```
+## metodos para acessar objetos
+
+* atributos privados e modificadores de acesso python self.__atributo
+
+```
+    def __init__(self, numero: int, titular: str, saldo: float, limite: float):
+        print("Construindo uma conta!")
+        self.__numero = numero
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite
+```
+* Os atributos irão receber o nome da classe como prefixo. Ex: _Conta__titular
