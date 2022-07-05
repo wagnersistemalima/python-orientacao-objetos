@@ -16,6 +16,8 @@ class Conta:
 
 ## Construtores
 
+* __init__ é uma função implicita
+
 * Sendo uma função automática, receberá um nome especial. Adicionaremos dois caracteres _ antes e depois do nome da função construtora,
 para criarmos __init__. O Python constrói o objeto, cria um lugar na memória e depois chama a função __init__. Como demonstração, segue o código:
 
