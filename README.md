@@ -9,6 +9,9 @@
 
 ## Classe
 
+* Uma classe deve ter apenas uma responsabilidade (ou deve ter apenas uma razão para existir)
+em outras palavras, ela não deve assumir responsabilidades que não são delas.
+
 ```
 class Conta:
 
@@ -42,3 +45,34 @@ para criarmos __init__. O Python constrói o objeto, cria um lugar na memória e
         self.__limite = limite
 ```
 * Os atributos irão receber o nome da classe como prefixo. Ex: _Conta__titular
+
+## Encapsulamento
+
+```
+    def get_numero(self) -> int:
+        return self.__numero
+    
+    def get_titular(self) -> str:
+        return self.__titular
+    
+    def get_saldo(self) -> float:
+        return self.__saldo
+    
+    def get_limite(self) -> float:
+        return self.__limite
+
+```
+
+## Na linguagem Python, os métodos que dão acesso são nomeados como properties.
+
+* Com isto, indicamos que este método representa uma propriedade
+
+```
+    @property
+    def nome(self):
+        return self.__nome
+        
+    @nome.setter
+    def nome(self, nome):
+        self.__nome = nome
+```
