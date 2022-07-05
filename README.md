@@ -1,5 +1,19 @@
 # python-orientacao-objetos
 
+## Diagrama
+
+![alter txt](https://github.com/wagnersistemalima/python-orientacao-objetos/blob/main/image/diagrama.png)
+
+* A Conta() está dentro de um módulo — que em algumas linguagens receberá o nome de package ou namespace
+* conta.py pode conter varias classes
+
+## Classe
+
+```
+class Conta:
+
+```
+
 ## Construtores
 
 * Sendo uma função automática, receberá um nome especial. Adicionaremos dois caracteres _ antes e depois do nome da função construtora,
