@@ -76,3 +76,12 @@ para criarmos __init__. O Python constrói o objeto, cria um lugar na memória e
     def nome(self, nome):
         self.__nome = nome
 ```
+## Criando metodos na classe privado
+
+* Utilazar __nome_do_metodo():
+
+```
+    def __valida_retirada(self, valor) -> bool:
+        valor_disponivel_para_retirada = self.__saldo + self.limite
+        return valor_disponivel_para_retirada >= valor
+```
