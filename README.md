@@ -85,3 +85,16 @@ para criarmos __init__. O Python constrói o objeto, cria um lugar na memória e
         valor_disponivel_para_retirada = self.__saldo + self.limite
         return valor_disponivel_para_retirada >= valor
 ```
+
+## Metodos estaticos da classe
+
+* Adicionando um metodo statico da classe para criar um codigo do banco
+* Anotação @staticmethod
+* Nao precisa da referencia self
+
+```
+    @staticmethod
+    def codigo_banco() -> str:
+        return "001"
+
+```
